@@ -1,0 +1,679 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background: #222930;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 2;
+}
+.formtong{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+header>.formtong>.form--logo{
+    min-width: 10%;
+    height: 100%;
+    float: left;
+    margin-top: 3px;
+}
+header>.formtong>.form--logo>.form--logo_img{
+    margin-top: 3px;
+    margin-left: 15px;
+}
+header>.formtong>.form--login{
+    min-width: 40%;
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header>.formtong>.form--login>.search{
+    position: relative;
+    width: 70%;
+    padding: 1px 10px;
+    border-radius: 20px;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+header>.formtong>.form--login>.search::before{
+    content: '';
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+header>.formtong>.form--login>.search>i{
+    font-size: 25px;
+    padding: 7px 5px 5px 10px;
+}
+header>.formtong>.form--login>.search>input{
+    padding: 5px 0px 5px 10px;
+    font-size: 15px;
+    width: 80%;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+header>.formtong>.form--login>.search>.timkiem{
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    /* border: 1px solid #fff; */
+    top: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: auto;
+    margin-top: 18px;
+}
+header>.formtong>.form--login>.search>.timkiem::-webkit-scrollbar{
+    display: none;
+}
+header>.formtong>.form--login>.search>.timkiem>.card{
+    width: 100%;
+    min-height: 60px;
+    /* border: 1px solid #fff; */
+    display: none;
+    align-items: center;
+    padding: 0px 5px;
+    text-decoration: none;
+    /* background: rgba(184, 184, 184, 0.5); */
+    background: rgba(0, 0, 0, 0.6);
+    margin-bottom: 5px;
+}
+header>.formtong>.form--login>.search>.timkiem>.card>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+header>.formtong>.form--login>.search>.timkiem>.card>.noidung{
+    color: #fff;
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+    padding: 0;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+header>.formtong>.form--login>.search>.timkiem>.card>.noidung>.musiclist_list--namemusic{
+    color: #bebebe;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+header>.formtong>.form--gioithieu{
+    min-width: 54%;
+    height: 100%;
+    float: right;
+}
+
+header>.formtong>.form--gioithieu>ul>li>a{
+    color: #E9E9E9;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: 700;
+}
+header>.formtong>.form--gioithieu>ul>li>a:hover{
+    color: #4EB1BA;
+    text-decoration: none;
+    margin: 20px;
+    text-shadow: 0px 0px 10px #4EB1BA;
+    transition: all 0.2s ease-in;
+    width: 20px;
+    border-radius: 5px;
+}
+.form--gioithieu>ul>li{
+    display: inline;
+    margin-top: 14px;
+    float: right;
+}
+
+nav{
+    width: 100%;
+    height: 300vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(https://1.bp.blogspot.com/-C0JigMT37NM/X5LCcJrgW8I/AAAAAAAAcOY/X6mWWAP0aRcacWRI2IU3bVsg9BX_LoVuACLcBGAsYHQ/w1600/v1-beautiful-landscape-phone-wallpaper-HD.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav>.quanlytong{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+nav>.quanlytong>.quanlytong_list{
+    width: 20%;
+    height: 100;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 2px #090f1f;
+    margin-top: 60px;
+    position: fixed;
+}
+nav>.quanlytong>.quanlytong_list>h1{
+    color: #E9E9E9;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach{
+    width: 100%;
+    height:135px;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach>h4{
+    color: #bebebe;
+    font-size: 15px;
+    margin-left: 20px;
+    transition: 0.3s linear;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach>h4:hover{
+    color: #E9E9E9;
+    font-size: 15px;
+    margin-left: 20px;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach>h4>span{
+    position: relative;
+    margin-right: 30px;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach>h4>span::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 2px solid #bebebe;
+    top: -5px;
+    transition: 0.3s linear;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach>h4:hover span::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 2px solid #E9E9E9;
+    top: -5px;
+    transition: 0.3s linear;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach>h4>.fa-solid{
+    display: none;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach>.music{
+    color: #4EB1BA;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach>.music>span{
+    display: none;
+}
+nav>.quanlytong>.quanlytong_list>.quanglytong_list--danhsach>.music>.fa-solid{
+    display: flex;
+    margin-right: 15px;
+}
+nav>.quanlytong>.quanlytong_musiclist{
+    width: 80%;
+    height: 96%;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 80px;
+    margin-left: 20%;
+}
+nav>.quanlytong>.quanlytong_list>.quanlytong_music{
+    width: 100%;
+    height: 540px;
+}
+nav>.quanlytong>.quanlytong_list>.quanlytong_music>li{
+    position: relative;
+    list-style-type: none;
+    padding: 0px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* margin-bottom: 10px; */
+    transition: 0.3s linear;
+}
+nav>.quanlytong>.quanlytong_list>.quanlytong_music>li:hover{
+    background: #4EB1BA;
+}
+nav>.quanlytong>.quanlytong_list>.quanlytong_music>li>span{
+    font-size: 15px;
+    font-weight: 700;
+    color: #bebebe;
+}
+nav>.quanlytong>.quanlytong_list>.quanlytong_music>li>img{
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    /* box-shadow: 0px 0px 15px #4EB1BA; */
+}
+nav>.quanlytong>.quanlytong_list>.quanlytong_music>li>h5{
+    margin-left: 15px;
+    font-size: 15px;
+    color: #E9E9E9;
+}
+nav>.quanlytong>.quanlytong_list>.quanlytong_music>li>h5>.musiclist_list--namemusic{
+    font-size: 12px;
+    color: #bebebe;
+    margin-top: 5px;
+}
+nav>.quanlytong>.quanlytong_list>.quanlytong_music>li>.fa-solid{
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    font-size: 30px;
+    color: #fff;
+}
+nav>.quanlytong>.quanlytong_musiclist>.mySlides{
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+nav>.quanlytong>.quanlytong_musiclist>.mySlides>img{
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    /* border: 1px solid #fff; */
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.music_phobien_tieude{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 20px;
+
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.music_phobien_tieude>.music_phobien_tieude--dieukhien>.fa-solid{
+    color: #bebebe;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.music_phobien_tieude>.music_phobien_tieude--dieukhien>.fa-solid:hover{
+    color: #fff;
+
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song::-webkit-scrollbar{
+    display: none;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song>li{
+    min-width: 215px;
+    height: 270px;
+    list-style-type: none;
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+    transition: 0.3s linear;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song>li:hover{
+    background: rgba(0, 0, 0, 0.4);
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song>li>.list_song_music--img{
+    position: relative;
+    width: 215px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song>li>.list_song_music--img>img{
+    width: 100%;
+    height: 100%;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song>li>.list_song_music--img>i{
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    transition: 0.3s linear;
+    opacity: 0;
+    z-index: 1;
+    width: 215px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song>li>.list_song_music--img>i:hover{
+    opacity: 1;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song>li>h5{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    display: block;
+    margin-top: 10px;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_phobien>.list_song>li>h5>.musiclist_list--namemusic{
+    color: #bebebe;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    padding-top: 10px;
+}
+
+nav>.quanlytong>.quanlytong_musiclist>.music_dj{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 110px;
+    /* border: 1px solid #fff; */
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_dj>.music_phobien_tieude{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 20px;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_dj>.music_phobien_tieude>.music_phobien_tieude--dieukhien>.fa-solid{
+    color: #bebebe;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_dj>.music_phobien_tieude>.music_phobien_tieude--dieukhien>.fa-solid:hover{
+    color: #fff;
+
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_dj>.item{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    /* align-items: center;
+    justify-content: center; */
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_dj>.item::-webkit-scrollbar{
+    display: none;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_dj>.item>li{
+    color: #fff;
+    list-style-type: none;
+    position: relative;
+    min-width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    scroll-behavior: smooth;
+    margin-right: 10.5px;
+    margin-left: 10.5px;
+    margin-bottom: 10px;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_dj>.item>li>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+}
+nav>.quanlytong>.quanlytong_musiclist>.music_dj>.item>li>.number1>img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background: #222930;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+footer>.songmusic{
+    width: 50px;
+    height: 40px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+footer>.songmusic>.songmusic_song1{
+    width: 5px;
+    height: 15px;
+    background: rgb(69, 176, 185);
+    margin-right: 5px;
+    animation: unset;
+    border-radius: 5px 5px 0px 0px;
+}
+footer>img{
+    width: 55px;
+    height: 55px;
+}
+footer>h5{
+    width: 300px;
+    font-size: 15px;
+    color: #E9E9E9;
+    margin-left: 10px;
+}
+footer>h5>.musiclist_list--namemusic{
+    width: 400px;
+    font-size: 13px;
+    color: #bebebe;
+}
+footer>.icon{
+    font-size: 25px;
+    color: #fff;
+    z-index: 1;
+}
+
+footer>.icon>.fa-solid{
+    cursor: pointer;
+    outline: none;
+    margin-right: 10px;
+}
+footer>.icon>.nutmusic{
+    font-size: 20px;
+    margin-right: 10px;
+    width: 20px;
+    /* border: 1px solid #fff; */
+    overflow: hidden;
+    align-items: center;
+}
+footer>.icon>#dowload_muisc{
+    color: #fff;
+}
+footer>.icon>#dowload_muisc>.fa-solid{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+footer>.icon>.fa-solid:nth-child(3){
+    border-radius: 50%;
+    padding: 1px 3px 0px 6px;
+    transition: 0.3s linear;
+}
+footer>span{
+    color: #fff;
+    font-size: 20px;
+    width: 50px;
+}
+footer>#currentstart{
+    margin: 0px 10px 0px 20px;
+}
+
+/* Chỉnh thời gian nhạc */
+footer>.bar{
+    position: relative;
+    width: 43%;
+    height: 7px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0px 30px 0px 0px;
+    /* border-radius: 30px; */
+}
+footer>.bar>.bar2{
+    position: absolute;
+    background: #4EB1BA;
+    /* width: 100%; */
+    height: 100%;
+    /* border-radius: 30px; */
+    top: 0;
+}
+footer>.bar>.dot{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #4EB1BA;
+    border-radius: 40%;
+    top:-7px;
+    transition: 0.2s linear;
+    /* box-shadow: 0px 0px 5px #fff; */
+    /* margin-left: 20px; */
+}
+/* footer>.bar>.dot::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border:1px solid #4EB1BA;
+    border-radius: 50%;
+    left: -4px;
+    top: -4px;
+    box-shadow: inset 0px 0px 5px #4EB1BA;
+} */
+footer>.bar>input{
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    cursor: pointer;
+    z-index: 99999;
+    /* transition: 0.2s linear; */
+    opacity: 0;
+}
+
+/* Chỉnh âm thanh */
+footer>.vol{
+    position: relative;
+    width: 150px;
+    height: 7px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+    cursor: pointer;
+}
+footer>.vol>.fa-solid{
+    color: #fff;
+    position: absolute;
+    font-size: 20px;
+    top: -7px;
+    left: -40px;
+}
+footer>.vol>input{
+    position: absolute;
+    width: 100%;
+    top: -8px;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999;
+    /* transition: 0.3s linear; */
+    opacity: 0;
+}
+footer>.vol>.vol_bar{
+    position: absolute;
+    background: #4EB1BA;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 30px; */
+    top: 0;
+    transition: 0.1s linear;
+}
+footer>.vol>.dott{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #4EB1BA;
+    border-radius: 40%;
+    left: 100%;
+    top: -7px;
+    transition: 0.1s linear;
+    /* box-shadow: 0px 0px 5px #fff; */
+}
+/* footer>.vol>.dott::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border:1px solid #4EB1BA;
+    border-radius: 50%;
+    left: -6px;
+    top: -6px;
+    box-shadow: inset 0px 0px 5px #4EB1BA;
+} */
+
+
+
+
+footer>.songmusic>.songmusic_song1:nth-child(2){
+    height: 35px;
+    /* animation-delay: 0.4s; */
+}
+footer>.songmusic>.songmusic_song1:nth-child(3){
+    height: 11px;
+    /* animation-delay: 0.8s; */
+}
+/* javascript cho cái class  .songmusic */ 
+footer>.active2>.songmusic_song1{
+    animation: songmusic 1s linear infinite;
+}
+footer>.active2>.songmusic_song1:nth-child(2){
+    animation-delay: 0.4s;
+}
+footer>.active2>.songmusic_song1:nth-child(3){
+    animation-delay: 0.8s;
+}
+@keyframes songmusic{
+    0%{
+        height: 10px;
+    }
+    50%{
+        height: 25px;
+    }
+    100%{
+        height: 10px;
+    }
+}
